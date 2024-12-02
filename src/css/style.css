@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff7f50;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.eggs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.egg {
+  width: 80px;
+  height: 120px;
+  background-color: #ffb6c1;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.egg::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#egg1 {
+  background-color: #f9c74f;
+}
+
+#egg2 {
+  background-color: #90be6d;
+}
+
+#egg3 {
+  background-color: #f94144;
+}
+
+#egg4 {
+  background-color: #577590;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
